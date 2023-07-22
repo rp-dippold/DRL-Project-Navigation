@@ -1,0 +1,38 @@
+# File path to the banana environment
+banana_env: "./Banana_Linux/Banana.x86_64"
+# Prioritization exponent
+alpha: 0.5
+# Starting value of the importance sampling weights exponent beta
+beta_start: 0.5
+# Divisor (per episode) for increasing beta
+beta_increase: 0.9995
+# Maximum value of beta
+beta_end: 1.0
+# Starting value of epsilon, for epsilon-greedy action selection
+epsilon_start: 1.0
+# Multiplicative factor (per episode) for decreasing epsilon
+epsilon_decay: 0.995
+# Minimum value of epsilon
+epsilon_end: 0.01
+# Maximum number of training episodes
+n_episodes: 2000
+# Maximum number of timesteps per episode
+max_timesteps: 1000
+# Discount rate
+gamma: 0.99
+# Soft update of target network parameters
+tau: 1.0E-3
+# Update (learn) the model parameters after every n steps
+update_every: 4
+# Learning rate for the optimizer
+learning_rate: 5.0E-4
+# Size of the replay buffer
+buffer_size: 10000
+# Batch size for training
+batch_size: 64
+# Desired average reward
+total_avg_reward: 16.0
+# Number of episodes for average reward
+scores_window: 100
+# Number of neurons in the hidden layers of the networks
+hidden_sizes: [32, 32]
