@@ -42,7 +42,7 @@ The project is structured as follows:
  
 ### Installation and Dependencies
 
-The code of this project was tested on Linux and Windows 11. To get the code running on your local system, follow these steps
+The code of this project was tested on Linux (Ubuntu 20.04) and Windows 11. To get the code running on your local system, follow these steps
 which are base on Anaconda and pip:
 
 1.  `conda create --name banana python=3.8 -c conda-forge`
@@ -61,4 +61,28 @@ which are base on Anaconda and pip:
 
 
 ## Instructions
-The README describes how to run the code in the repository, to train the agent. For additional resources on creating READMEs or using Markdown, see here and here.
+To run the code go into the directory where you install the repository. First of all, open the file `config.yml` and check if `banana_env` refers to the correct banana environment. Set the banana environment as follows:
+
+* **`Windows 11`**: "./Banana_Windows_x86_64/Banana.exe"
+* **`Linux`**: "./Banana_Linux/Banana.x86_64"
+
+#### Training an Agent
+Before training an agent you should adapt the respective hyperparameters in config.yml. The current values allow to train an agent that can get an average score of +16 over 100 consecutive episodes.
+
+To start training just enter the following command: `python main.py train`
+
+If you want to watch the agent during training enter: `python main.py train --watch`
+
+At the end of the training a window pops up that shows the scores of the agent for each episode. After closing this 
+window, the program stops.
+
+If the agent was trained successfully its weights are saved in the root directory and not in directory `models`. \
+The filename matches the following pattern: `checkpoint-<hl1>-...-<hln>-<score>-<episode>.pth`
+* `<hlx>` means the number of neurons in hidden layer x
+* `<score>` means the average score over the last 100 consecutive episodes
+* `<episode>` means the episode in which the agent solved the environment successfully (see project details.)
+
+#### Running the Environment with a Smart Agent
+Running the environment with a trained agent requires the parameters in config.yml fit the saved agent weights, i.e.
+`hidden_sizes` has to be 
+

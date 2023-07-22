@@ -35,4 +35,4 @@ total_avg_reward: 16.0
 # Number of episodes for average reward
 scores_window: 100
 # Number of neurons in the hidden layers of the networks
-hidden_sizes: [32, 32]
+hidden_sizes: [16, 16]
