@@ -24,6 +24,7 @@ The project is structured as follows:
 📦project<br>
  ┣ 📂Banana_Linux  **`(contains the Banana environment for Linux based systems)`** <br>
  ┣ 📂Banana_Windows_x86_64  **`(contains the Banana environment for Windows 64-bit based systems)`** <br>
+ ┣ 📂img
  ┣ 📂models  **`(contains the model states of successfully trained agents)`** <br>
  ┃ ┣ checkpoint-16-16-16.00-625.pth<br>
  ┃ ┗ ...<br>
@@ -92,4 +93,3 @@ Running the environment with a trained agent requires the parameters in config.y
 
 `<path to stored weights>` is the path to the directory plus the name of the `checkpoint-xxx.path` file, e.g.
 `./models/checkpoint-16-16-16.00-625.pth`.
-
