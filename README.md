@@ -65,6 +65,9 @@ To run the code go into the directory where you install the repository. First of
 * **`Windows 11`**: "./Banana_Windows_x86_64/Banana.exe"
 * **`Linux`**: "./Banana_Linux/Banana.x86_64"
 
+**Note that the first start of the Unity environment &mdash; as described below  &mdash; may take up to 30 seconds; all following
+start times are much shorter. So please be patient!**
+
 #### Training an Agent
 Before training an agent you should adapt the respective hyperparameters in config.yml. The current values allow to train an agent that can get an average score of +16 over 100 consecutive episodes.
 
