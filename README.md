@@ -47,13 +47,12 @@ which are base on Anaconda and pip:
 
 1.  `conda create --name banana python=3.8 -c conda-forge`
 2.  `conda activate banana`
-3.  `[ONLY WINDOWS] conda install swig -c conda-forge`
-4.  Create a directory where you want this save this project
-5.  `git clone https://github.com/rp-dippold/DRL-Project-Navigation.git`
-6.  `cd python`
-7.  `pip install .`
-8.  `python -m ipykernel install --user --name banana --display-name "banana"`
-9.  Install Pytorch:
+3.  Create a directory where you want this save this project
+4.  `git clone https://github.com/rp-dippold/DRL-Project-Navigation.git`
+5.  `cd python`
+6.  `pip install .`
+7.  `python -m ipykernel install --user --name banana --display-name "banana"`
+8.  Install Pytorch:
     * [CPU]: `pip install torch torchvision torchaudio`
     * [GPU]: `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117`.\
     Depending on your GPU and cudnn version a different pytorch version my be required. Please refer to 
