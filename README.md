@@ -24,14 +24,14 @@ The project is structured as follows:
 📦project<br>
  ┣ 📂Banana_Linux  **`(contains the Banana environment for Linux based systems)`** <br>
  ┣ 📂Banana_Windows_x86_64  **`(contains the Banana environment for Windows 64-bit based systems)`** <br>
- ┣ 📂img
+ ┣ 📂img <br>
  ┣ 📂models  **`(contains the model states of successfully trained agents)`** <br>
  ┃ ┣ checkpoint-16-16-16.00-625.pth<br>
- ┃ ┗ ...<br>
+ ┃ ┗ ... <br>
  ┣ 📂python **`(files required to set up the environment)`** <br>
  ┣ 📂reward_plots **`(contains the reward plots of successfully trained agents)`** <br>
  ┃ ┣ Reward-Plot-16-16-16_00-625.jpeg<br>
- ┃ ┗ ...<br>
+ ┃ ┗ ... <br>
  ┣ .gitignore <br>
  ┣ config.py  <br>
  ┣ config.yml <br>
