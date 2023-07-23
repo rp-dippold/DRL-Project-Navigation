@@ -28,7 +28,7 @@ The project is structured as follows:
  ┃ ┣ checkpoint-16-16-16.00-625.pth<br>
  ┃ ┗ ...<br>
  ┣ 📂python **`(files required to set up the environment)`** <br>
- ┣ 📂reward_plots **`(contains the reward plots to successfuly trained agents)`** <br>
+ ┣ 📂reward_plots **`(contains the reward plots of successfully trained agents)`** <br>
  ┃ ┣ Reward-Plot-16-16-16_00-625.jpeg<br>
  ┃ ┗ ...<br>
  ┣ .gitignore <br>
@@ -84,5 +84,10 @@ The filename matches the following pattern: `checkpoint-<hl1>-...-<hln>-<score>-
 
 #### Running the Environment with a Smart Agent
 Running the environment with a trained agent requires the parameters in config.yml fit the saved agent weights, i.e.
-`hidden_sizes` has to be 
+`hidden_sizes` must equal the values during training. The following command runs the environment:
+
+`python main.py run --params <path to stored weights>`
+
+`<path to stored weights>` is the path to the directory plus the name of the `checkpoint-xxx.path` file, e.g.
+`./models/checkpoint-16-16-16.00-625.pth`.
 
