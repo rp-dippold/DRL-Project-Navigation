@@ -31,7 +31,7 @@ The project is structured as follows:
  ┣ 📂python **`(files required to set up the environment)`** <br>
  ┣ 📂reward_plots **`(contains the reward plots of successfully trained agents)`** <br>
  ┃ ┣ Reward-Plot-16-16-16_00-625.jpeg<br>
- ┃ ┗ ... <br>
+ ┃ ┗ ... git<br>
  ┣ .gitignore <br>
  ┣ config.py  <br>
  ┣ config.yml <br>
