@@ -54,10 +54,10 @@ The following figure shows the reward plots of the most effective DQNs.
 
 The correspoding training outputs are shown below:
 
-<p style="border: 1px solid">
-  <img style="padding: 10px 10px 20px 10px" src="./img/score_episodes_16-16.png" width="300" />
-  <img style="padding: 10px 10px 20px 10px" src="./img/score_episodes_32-32.png" width="300" />
-  <img style="padding: 10px 10px 0px 10px" src="./img/score_episodes_64-64.png" width="300" />
+<p float=left>
+  <img src="./img/score_episodes_16-16.png" width="300" />
+  <img src="./img/score_episodes_32-32.png" width="300" />
+  <img src="./img/score_episodes_64-64.png" width="300" />
 
   <em> Training outputs of a 16-16 DQN, 32-32 DQN and 64-64 DQN (from left to right) </em>
 </p>
